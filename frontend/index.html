@@ -15,24 +15,30 @@
 <body>
     <div class="container my-5">
         <h1>Estadísticas de votación</h1>
-        <div class="card my-5">
-            <div class="card-header">
-                <h2>Temas</h2>
-            </div>
-            <div class="card-body">
-                <div class="list-group" id="topics">
+        <div class="row my-5 d-flex flex-row justify-content-around">
+            <aside class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Temas</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group" id="topics">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="card my-5">
-            <div class="card-header">
-                <h2>Estadísticas</h2>
-            </div>
-            <div class="card-body">
-                <div class="my-5">
-                    <div id="chart"></div>
+            </aside>
+            <article class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Estadísticas</h2>
+                    </div>
+                    <div class="card-body h-100">
+                        <div class="my-5 w-80">
+                            <div id="chart"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </article>
         </div>
     </div>
     <script src="app.js"></script>

@@ -1,18 +1,36 @@
 {
-    "name": "frontend",
-    "version": "1.0.0",
-    "description": "System votations",
-    "main": "index.js",
-    "scripts": {
-      "start": "electron .",
-      "dev": "electron . --dev",
-      "package": "electron-builder"
+  "name": "voting-app",
+  "version": "1.0.0",
+  "description": "A simple voting app built with Electron.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "install": "node install.js"
+  },
+  "build": {
+    "appId": "com.example.voting-app",
+    "productName": "VotingApp",
+    "mac": {
+      "category": "public.app-category.utilities"
     },
-    "dependencies": {
-      "bootstrap": "^5.2.3"
-    },
-    "devDependencies": {
-      "electron": "^24.1.3",
-      "electron-builder": "^23.6.0"
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
     }
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron-builder": "^22.14.13",
+    "electron": "^13.6.9"
   }
+}

@@ -1,4 +1,5 @@
-const dominio = "http://172.18.224.1:8000/"
+// traer el dominio desde un archivo de configuración
+const dominio = "http://0.0.0.0:8000/"
 const apiUrl = dominio+"estadisticas/";
 let selectedTopicId;
 

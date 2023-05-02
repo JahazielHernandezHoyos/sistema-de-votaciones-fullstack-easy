@@ -30,7 +30,7 @@
         ]
       },
       {
-        "from": "backend-fastapi.exe",
+        "from": "resources/backend-fastapi.exe",
         "to": "backend-fastapi.exe"
       }
     ],

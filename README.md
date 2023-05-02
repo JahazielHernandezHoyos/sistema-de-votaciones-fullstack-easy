@@ -8,7 +8,7 @@ Para instalar las dependencias, ejecute:
 
 ```bash
 pip install -r requirements.txt
-npm install --prefix frontend
+npm install 
 ```
 # 💾 Configuración de la base de datos 💾
 
@@ -19,8 +19,10 @@ El sistema de votación utiliza una base de datos SQLite para almacenar la infor
 Para iniciar la aplicación, ejecute:
 
 ```bash
-uvicorn main:app --reload
+pyinstaller backend-fastapi.spec
 ```
+Lo anterior hara un .exe del backend para luego ejecutar la aplicacion de escritorio
+
 Para iniciar la aplicación de escritorio, ejecute:
 
 ```bash
@@ -28,6 +30,16 @@ npm run start
 ```
 
 Una vez que la aplicación esté en funcionamiento, abra un navegador y vaya a http://localhost:8000 para acceder a la página de inicio. Desde allí, puede crear una cuenta para empezar a crear votaciones y votar en ellas.
+
+# Compilacion de la aplicacion de escritorio 📦
+
+Para compilar la aplicacion de escritorio, ejecute:
+
+```bash
+npm run dist
+```
+
+Esto creara un .exe en la carpeta dist
 
 # 🤝 Contribuciones 🤝
 

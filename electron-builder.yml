@@ -1,0 +1,7 @@
+files:
+  - from: backend
+    to: backend
+    filter:
+      - "**/*"
+  - from: backend-fastapi.exe # incluir aquí el path al archivo .exe
+    to: backend-fastapi.exe

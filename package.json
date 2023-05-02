@@ -1,27 +1,41 @@
 {
-  "name": "voting-app",
+  "name": "votation",
   "version": "1.0.0",
-  "description": "A simple voting app built with Electron.js",
+  "description": "Votation system with fastapi and electron",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "install": "node install.js"
+    "dist": "electron-builder"
   },
   "build": {
-    "appId": "com.example.voting-app",
-    "productName": "VotingApp",
-    "mac": {
-      "category": "public.app-category.utilities"
+    "appId": "com.app.votationsystem",
+    "productName": "Votation system",
+    "directories": {
+      "output": "dist"
     },
+    "files": [
+      "backend/**/*",
+      "frontend/**/*",
+      "main.js",
+      "package.json",
+      "backend-fastapi.exe"
+    ],
+    "extraResources": [
+      {
+        "from": "backend",
+        "to": "backend",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
     "win": {
       "target": [
         {
           "target": "nsis",
           "arch": [
-            "x64",
-            "ia32"
+            "x64"
           ]
         }
       ]
@@ -30,7 +44,6 @@
   "dependencies": {
   },
   "devDependencies": {
-    "electron-builder": "^22.14.13",
-    "electron": "^13.6.9"
+    "electron-builder": "^22.11.7"
   }
 }

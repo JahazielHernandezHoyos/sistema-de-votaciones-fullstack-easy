@@ -74,6 +74,30 @@ async function showTopics() {
   topicsContainer.appendChild(list);
 }
 
+function createTopic(){
+  /*
+  Envia data por queryparameters a la api
+  */
+  const titulo = document.getElementById('titulo').value;
+  const descripcion = document.getElementById('descripcion').value;
+  let url = dominio+'temas?titulo='+titulo+'&descripcion='+descripcion;
+  console.log(url)
+  fetch(url, {
+    method: 'POST',
+    mode: 'cors',
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+    location.reload();
+  }
+  )
+  .catch((error) => {
+    console.error('Error:', error);
+  }
+  );
+}
+
 // Función principal para mostrar los temas y la gráfica
 async function main() {
   // Obtenemos los temas desde la API

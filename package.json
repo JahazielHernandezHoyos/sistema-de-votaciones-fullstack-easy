@@ -28,6 +28,10 @@
         "filter": [
           "**/*"
         ]
+      },
+      {
+        "from": "backend-fastapi.exe",
+        "to": "backend-fastapi.exe"
       }
     ],
     "win": {

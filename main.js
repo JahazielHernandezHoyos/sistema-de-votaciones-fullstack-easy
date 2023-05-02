@@ -3,9 +3,9 @@ const { spawn } = require('child_process');
 const fs = require('fs');
 const os = require('os');
 
-function runPythonScript() {
+function runPythonScriptDev() {
   //ejecutar server fastapi
-  const child = spawn('backend-fastapi.exe');
+  const child = spawn('resources/backend-fastapi.exe');
   child.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`);
   });
@@ -30,7 +30,8 @@ function createWindow() {
 }
 
 function startApp() {
-  runPythonScript();
+  //ejecutar server fastapi
+  runPythonScriptDev();
   app.whenReady().then(createWindow);
 }
 

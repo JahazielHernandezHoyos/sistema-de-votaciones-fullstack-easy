@@ -21,7 +21,7 @@ Para iniciar la aplicación, ejecute:
 ```bash
 pyinstaller backend-fastapi.spec
 ```
-Lo anterior hara un .exe del backend para luego ejecutar la aplicacion de escritorio
+Lo anterior hara un .exe del backend para luego ejecutar la aplicacion de escritorio la cual debe volverse a poner en la carpeta resources
 
 Para iniciar la aplicación de escritorio, ejecute:
 

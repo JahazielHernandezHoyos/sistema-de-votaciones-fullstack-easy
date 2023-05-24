@@ -49,4 +49,4 @@ Las contribuciones son siempre bienvenidas. Siéntase libre de abrir un issue o 
 
 Este proyecto está bajo la Licencia MIT. Consulte el archivo LICENSE para obtener más detalles.
 
-En este archivo, se describe el sistema de votación y las tecnologías utilizadas. También se incluyen instrucciones para la instalación y el uso de la aplicación, así como información sobre cómo contribuir al proyecto y la licencia bajo la que se distribuye. Además, se incluye información sobre la configuración de la base de datos y el acceso a la aplicación.
+En este archivo, se describe el sistema de votación y las tecnologías utilizadas. También se incluyen instrucciones para la instalación y el uso de la aplicación, así como información sobre cómo contribuir al proyecto y la licencia bajo la que se distribuye. Además, se incluye información sobre la configuración de la base de datos y el acceso a la aplicación. :)
